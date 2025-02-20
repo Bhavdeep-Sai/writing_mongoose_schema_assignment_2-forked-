@@ -1,0 +1,21 @@
+meta {
+  name: Post-Test
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3010/blogs
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "My First Blog",
+    "content": "This is a sample blog post with enough content to meet validation rules.",
+    "author": "johnDoe",
+    "tags": ["tech", "coding"]
+  }
+  
+}
